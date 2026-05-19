@@ -250,7 +250,7 @@
       <rect    id="zone-bookshelf" class="hotzone" x="945" y="228" width="210" height="240" rx="3"/>
     </svg>
     <div id="tap-label-s1" class="tap-label"></div>
-    <div class="scene-lbl">The Room</div>
+    <div class="scene-lbl">Oda</div>
   </div>
 
   <!-- SCENE 2: Masa -->
@@ -261,7 +261,7 @@
     </svg>
     <div id="tap-label-s2" class="tap-label"></div>
     <button class="back-btn" data-to="1">&#8592; Geri</button>
-    <div class="scene-lbl">The Desk</div>
+    <div class="scene-lbl">Masa</div>
     <div id="dialog2" class="dialog-box">
       <div class="dialog-header">
         <div class="dialog-speaker">&#9632; Yeraltı Adamı <div id="audio2" class="audio-indicator"><span></span><span></span><span></span><span></span></div></div>
@@ -275,7 +275,7 @@
   <div id="scene3" class="scene hidden">
     <img id="img3" class="bg" alt="Tablo" draggable="false" />
     <button class="back-btn" data-to="1">&#8592; Geri</button>
-    <div class="scene-lbl">Wanderer Above the Sea of Fog</div>
+    <div class="scene-lbl">Bulutların Üzerinde Yolculuk</div>
     <div id="dialog3" class="dialog-box">
       <div class="dialog-header">
         <div class="dialog-speaker">&#9632; Yeraltı Adamı <div id="audio3" class="audio-indicator"><span></span><span></span><span></span><span></span></div></div>
@@ -289,7 +289,7 @@
   <div id="scene4" class="scene hidden">
     <img id="img4" class="bg" alt="Palto" draggable="false" />
     <button class="back-btn" data-to="1">&#8592; Geri</button>
-    <div class="scene-lbl">Coat &amp; Hat</div>
+    <div class="scene-lbl">Palto ve Şapka</div>
     <div id="dialog4" class="dialog-box">
       <div class="dialog-header">
         <div class="dialog-speaker">&#9632; Yeraltı Adamı <div id="audio4" class="audio-indicator"><span></span><span></span><span></span><span></span></div></div>
@@ -317,7 +317,7 @@
   <div id="scene6" class="scene hidden">
     <img id="img6" class="bg" alt="Kitaplık" draggable="false" />
     <button class="back-btn" data-to="1">&#8592; Geri</button>
-    <div class="scene-lbl">Bookshelf</div>
+    <div class="scene-lbl">Kitaplık</div>
     <div id="dialog6" class="dialog-box">
       <div class="dialog-header">
         <div class="dialog-speaker">&#9632; Yeraltı Adamı <div id="audio6" class="audio-indicator"><span></span><span></span><span></span><span></span></div></div>
@@ -562,13 +562,13 @@ function bindHotspot(zoneId, label, targetScene, labelElId) {
 }
 
 // Scene 1
-bindHotspot('zone-desk',      'Examine Desk',        2, 'tap-label-s1');
-bindHotspot('zone-painting',  'Examine Painting',    3, 'tap-label-s1');
-bindHotspot('zone-hanger',    'Examine Coat Hanger', 4, 'tap-label-s1');
-bindHotspot('zone-bookshelf', 'Examine Bookshelf',   6, 'tap-label-s1');
+bindHotspot('zone-desk',      'Masayı İncele',         2, 'tap-label-s1');
+bindHotspot('zone-painting',  'Resmi İncele',           3, 'tap-label-s1');
+bindHotspot('zone-hanger',    'Elbise Askısını İncele',  4, 'tap-label-s1');
+bindHotspot('zone-bookshelf', 'Kitaplığı İncele',      6, 'tap-label-s1');
 
 // Scene 2
-bindHotspot('zone-liza', 'Examine Photograph', 5, 'tap-label-s2');
+bindHotspot('zone-liza', 'FOTOĞRAFI İNCELE', 5, 'tap-label-s2');
 
 // ── Geri & kapat ─────────────────────────────────────────────
 document.querySelectorAll('.back-btn').forEach(btn => {
